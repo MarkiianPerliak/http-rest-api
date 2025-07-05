@@ -1,3 +1,22 @@
+body {
+    font-family: "Fredoka";
+    font-weight: 500;
+}
+
+input {
+        font-family: "Fredoka";
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: rgb(199, 194, 194);
+}
+
+button {
+        font-family: "Fredoka";
+    font-weight: 500;
+}
+
 .justadiv {
     display: flex;
     justify-content: center;
@@ -28,9 +47,84 @@
         .line-block {
             background-color: rgb(206, 204, 204);
             width: 3px;
-            height: 220px;
+            height: 258px;
             margin-top: 6px;
             border-radius: 20px;
             border: none;
             margin-left: auto;
         }
+        .leftside {
+    margin-right: auto;
+    margin-left: 75px;
+}
+
+.rightside {
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.country-box {
+            border-radius: 15px;
+            border: 2px black solid;
+            padding: 10px;
+            gap: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0px;
+            margin-bottom: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 700px;
+            color: white;
+            font-family: 'Fredoka';
+}
+
+.coolherb {
+    width: 150px;
+    margin-top: 40px;
+}
+
+.country-box-1 {
+    margin-top: 40px;
+}
+
+.country-box {
+    margin-bottom: 40px;
+}
+
+        .country-box p {
+  color: white; /* fill color */
+  position: relative;
+  z-index: 1;
+}
+
+.country-box p::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0;
+  z-index: -1;
+  color: black; /* stroke color */
+  filter: blur(1px);
+  opacity: 0.8;
+}
+
+        .country-box h2 {
+  color: white; /* fill color */
+  position: relative;
+  z-index: 1;
+}
+
+.country-box h2::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0;
+  z-index: -1;
+  color: black; /* stroke color */
+  filter: blur(1px);
+  opacity: 0.8;
+}
+    

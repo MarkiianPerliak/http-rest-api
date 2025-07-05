@@ -20,6 +20,7 @@ function createText(data) {
     <p data-text="Languages: ${data[0].languages}" class="languages">Languages: ${data[0].languages}</p>
     <p data-text="Currencies: ${data[0].currencies.name}" class="currencies">Currencies: ${data[0].currencies.name}</p>
     <p data-text="Population: ${data[0].population}""class="Population">Population: ${data[0].population}</p>
+        <p data-text="Timezone: ${data[0].timezones[0]}" class="timezone">Timezone: ${data[0].timezones[0]}</p>
     <p data-text="Continent: ${data[0].continents}" class="continent">Continent: ${data[0].continents}</p>
     <p data-text="Area: ${data[0].area}km²" class="square-km">Area: ${data[0].area}km²</p>
             </div>
